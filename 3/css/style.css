@@ -30,7 +30,7 @@
 .main-header {
   background-color: #ffffff;
 }
-.main-nav__list.less {
+.main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
