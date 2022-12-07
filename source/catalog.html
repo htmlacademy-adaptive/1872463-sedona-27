@@ -7,22 +7,27 @@
     </head>
     <body class="page__body">
       <header class="main-header">
-        <a class="main-header__logo" href="index.html">
+        <a class="main-header__logo-link" href="index.html">
           <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть / Свернуть меню</span>
+            <span class="visually-hidden">Открыть/Свернуть меню</span>
+            <svg class="main-nav__icon" aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+            </svg>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="index.html">
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__item-link" href="#">
                   Главная
                 </a>
               </li>
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__item-link" href="#">
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="catalog.html">
                   Фото и видео
                 </a>
               </li>
@@ -43,6 +48,9 @@
       <main class="main-container">
         <section class="catalog">
           <h1 class="visually-hidden">Коллекция фото и видео снятых туристами</h1>
+          <div class="sedona">
+            <img  class="sedona__img" src="img/sedona.png" alt="Седона." width="229" height="39">
+          </div>
           <div class="catalog-intro">
             <h2 class="catalog-intro__title">
               Фото и видео
@@ -64,9 +72,11 @@
                   Автор фото: Борис
                 </p>
               </div>
-              <p class="user-likes">
-                1350
-              </p>
+              <div class="user-likes-wrapper">
+                <p class="user-likes">
+                  1350
+                </p>
+              </div>
             </li>
             <li class="user-item user-item--secondary">
               <div class="user-item__picture-wrapper">
@@ -80,9 +90,11 @@
                   Автор фото: Сергей
                 </p>
               </div>
-              <p class="user-likes">
-                143
-              </p>
+              <div class="user-likes-wrapper">
+                <p class="user-likes">
+                  143
+                </p>
+              </div>
             </li>
             <li class="user-item user-item--secondary">
               <div class="user-item__picture-wrapper">
@@ -96,9 +108,11 @@
                   Автор фото: Петр
                 </p>
               </div>
-              <p class="user-likes">
-                96
-              </p>
+              <div class="user-likes-wrapper">
+                <p class="user-likes">
+                  96
+                </p>
+              </div>
             </li>
             <li class="user-item user-item--secondary">
               <div class="user-item__picture-wrapper">
@@ -112,9 +126,11 @@
                   Автор фото: Антон
                 </p>
               </div>
-              <p class="user-likes">
-                254
-              </p>
+              <div class="user-likes-wrapper">
+                <p class="user-likes">
+                  254
+                </p>
+              </div>
             </li>
           </ul>
           <div class="catalog-video">
@@ -132,25 +148,31 @@
       </main>
       <footer class="main-footer">
         <div class="main-footer__wrapper">
-          <span>
+          <div class="main-footer__tag">
             #visitSedona
-          </span>
+          </div>
           <div class="main-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <img  class="social__link-img" src="img/social-vk.svg" alt="Мы в Контакте." width="24" height="24">
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <img  class="social__link-img" src="img/social-telegram.svg" alt="Мы в Телеграме." width="24" height="24">
+                </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <img  class="social__link-img" src="img/social-youtube.svg" alt="Мы в Ютубе." width="24" height="24">
+                </a>
               </li>
             </ul>
           </div>
           <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="" src="img/copyright.svg" width="129" height="36" alt="Разработано HTML Academy.">
+              <img class="copyright__img" src="img/copyright.svg" width="129" height="36" alt="Разработано HTML Academy.">
             </a>
           </div>
         </div>
