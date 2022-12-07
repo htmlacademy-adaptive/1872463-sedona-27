@@ -47,6 +47,9 @@
       <main class="main-container">
         <section class="review">
           <h1 class="visually-hidden">Форма отзыва туристов о Седоне</h1>
+          <div class="sedona">
+            <img  class="sedona__img" src="img/sedona.png" alt="Седона." width="229" height="39">
+          </div>
           <div class="review-intro">
             <h2 class="review-intro__title">
               Оставьте свой отзыв
@@ -55,8 +58,52 @@
               Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещеных вами достопримечательностях
             </p>
           </div>
-          <div>
-            ЗДЕСЬ БУДЕТ ФОРМА ОТЗЫВА
+          <div class="review__form-container">
+            <form class="form" action="" method="post">
+              <fieldset class="form__block form-block">
+                <legend class="form-block__title">Представьтесь:</legend>
+                <ul class="form-block__name-list">
+                  <li class="form-block__name-item input-text input-text--with-icon">
+                    <label for="" class="input-text__label">Имя*:</label>
+                    <input type="text" class="input-text__input">
+                  </li>
+                  <li class="form-block__name-item input-text">
+                    <label for="" class="input-text__label">Фамилия*:</label>
+                    <input type="text" class="input-text__input">
+                  </li>
+                  <li class="form-block__name-item input-text">
+                    <label for="" class="input-text__label">Отчество:</label>
+                    <input type="text" class="input-text__input">
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__block form-block">
+                <legend class="form-block__title">Контактная информация:</legend>
+              </fieldset>
+              <fieldset class="form__block form-block">
+                <legend class="form-block__title">ВАше Общее впечатление:</legend>
+                <ul class="form-block__grade-list">
+                  <li class="form-block__grade-item radio">
+                    <input id="good" name="grade" value="good" type="radio" class="visually-hidden radio__input" checked>
+                    <label for="good" class="radio__label">Скорее положительное</label>
+                  </li>
+                  <li class="form-block__grade-item radio">
+                    <input id="bad" type="radio" name="grade" value="bad" class="visually-hidden radio__input">
+                    <label for="bad" class="radio__label">Скорее отрицательное</label>
+                  </li>
+                  <li class="form-block__grade-item radio">
+                    <input  id="dntkmow" type="radio" name="grade" value="don't know" class="visually-hidden radio__input">
+                    <label for="dntkmow" class="radio__label">Затрудняюсь ответить</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__block form-block">
+                <legend class="form-block__title"></legend>
+              </fieldset>
+              <fieldset class="form__block form-block">
+                <legend class="form-block__title"></legend>
+              </fieldset>
+            </form>
           </div>
         </section>
       </main>
