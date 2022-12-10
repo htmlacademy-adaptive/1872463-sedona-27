@@ -1,0 +1,15 @@
+
+
+.advantage-wrapper--tertiary {
+  padding-top: 24px;
+  background-color: #eeeeee;
+}
+
+.advantage-item__title--tertiary {
+  color: #000000;
+}
+
+.advantage-item__order--tertiary,
+.advantage-item__tagline--tertiary {
+  color: #333333;
+}
