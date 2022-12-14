@@ -111,9 +111,9 @@
     padding-top: 18px;
     padding-bottom: 17px;
   }
-  .main-nav__item:not(:first-child) {
-    border-top: 1px solid #9ac2db;
-  }
+}
+.main-nav__item:not(:first-child) {
+  border-top: 1px solid #9ac2db;
 }
 @media (min-width: 768px) {
   .main-nav__item:not(:first-child) {
@@ -181,11 +181,11 @@
 }
 @media (min-width: 768px) {
   .welcome {
-    /*padding-right: 153px;
-    padding-left: 153px;*/
+    padding-right: 153px;
+    padding-left: 153px;
     padding-bottom: 91px;
-    /*background: url("../img/intro-triangle-tablet.svg") repeat-x 0 bottom, url("img/back-mobile-tablet.svg") no-repeat;
-    background-size: 100% 55px, cover;*/
+    background: url("../img/intro-triangle-tablet.svg") repeat-x 0 bottom, url("../img/back-mobile-tablet.svg") no-repeat;
+    background-size: 100% 55px, cover;
   }
 }
 .welcome__img {
