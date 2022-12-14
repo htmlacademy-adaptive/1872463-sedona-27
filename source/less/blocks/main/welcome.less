@@ -4,7 +4,17 @@
   padding-left: 19px;
   padding-bottom: 19px;
   background: url("../img/intro-triangle.svg") repeat-x 0 bottom, url("../img/back-mobile.svg") no-repeat;
-  background-size: 100% 57px, cover;
+  background-size: 100% 55px, cover;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome {
+    /*padding-right: 153px;
+    padding-left: 153px;*/
+    padding-bottom: 91px;
+    /*background: url("../img/intro-triangle-tablet.svg") repeat-x 0 bottom, url("img/back-mobile-tablet.svg") no-repeat;
+    background-size: 100% 55px, cover;*/
+  }
 }
 
 .welcome__img {
@@ -12,4 +22,10 @@
   width: 100%;
   height: auto;
   padding-top: 90px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__img {
+    padding-top: 77px;
+  }
 }

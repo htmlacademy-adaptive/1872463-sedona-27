@@ -14,29 +14,29 @@
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть/Свернуть меню</span>
             <svg class="main-nav__icon" aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
-              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
-              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+              <path d="M22.9 0H0V4H22.9V0Z" fill="#81b3d2"/>
+              <path d="M22.9 9H0V13H22.9V9Z" fill="#81b3d2"/>
+              <path d="M22.9 18H0V22H22.9V18Z" fill="#81b3d2"/>
             </svg>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
+              <li class="main-nav__item main-nav__item--index">
                 <a class="main-nav__item-link" href="index.html">
                   Главная
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--catalog">
                 <a class="main-nav__item-link" href="catalog.html">
                   Фото и видео
                 </a>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">
+              <li class="main-nav__item main-nav__item--form">
+                <a class="main-nav__item-link main-nav__item-link--active" href="#">
                   Форма отзыва
                 </a>
               </li>
-              <li class="main-nav__item main-nav__item--htmlacademi">
+              <li class="main-nav__item main-nav__item--htmlacademy">
                 <a class="main-nav__item-link" href="#">
                   HTML ACADEMY
                 </a>
@@ -50,7 +50,7 @@
         <section class="review">
           <h1 class="visually-hidden">Форма отзыва туристов о Седоне</h1>
           <div class="sedona">
-            <img  class="sedona__img" src="img/sedona.png" alt="Седона." width="229" height="39">
+            <img  class="sedona__img" src="img/sedona.svg" alt="Седона." width="229" height="39">
           </div>
           <div class="review-intro">
             <h2 class="review-intro__title">
@@ -61,9 +61,9 @@
             </p>
           </div>
           <!--<div class="review__form-container"> -->
-            <form class="form-review" action="" method="post">
+            <form class="form-review" action="https://echo.htmlacademy.ru/" method="post">
               <div class="form-review__wrapper">
-                <fieldset class="form__review">
+                <fieldset class="form-review__fieldset">
                   <legend class="form-review__title">Представьтесь:</legend>
                   <ul class="form-review__name-list">
                     <li class="form-review__name-item input-text">
@@ -79,10 +79,10 @@
                       <input class="input-text__input" type="text" id="middle-name" name="middle-name" placeholder="Викторович">
                     </li>
                   </ul>
-              </fieldset>
+                </fieldset>
               </div>
               <div class="form-review__wrapper">
-                <fieldset class="form__review">
+                <fieldset class="form-review__fieldset">
                   <legend class="form-review__title">Контактная информация:</legend>
                   <ul class="form-review__сontact-list">
                     <li class="form-review__сontact-item input-text input-text--with-icon-phone">
@@ -97,26 +97,26 @@
                 </fieldset>
               </div>
               <div class="form-review__wrapper">
-                <fieldset class="form__review">
+                <fieldset class="form-review__fieldset">
                   <legend class="form-review__title">Ваше общее впечатление:</legend>
                   <ul class="form-review__grade-list">
                     <li class="form-review__grade-item radio">
-                      <input class="visually-hidden radio__input" id="good" name="good" value="good" type="radio" checked>
+                      <input class="visually-hidden radio__input" id="good" name="grade" value="good" type="radio" checked>
                       <label class="radio__label" for="good" >Скорее положительное</label>
                     </li>
                     <li class="form-review__grade-item radio">
-                      <input class="visually-hidden radio__input" id="bad" type="radio" name="bad" value="bad">
+                      <input class="visually-hidden radio__input" id="bad" type="radio" name="grade" value="bad">
                       <label class="radio__label" for="bad" >Скорее отрицательное</label>
                     </li>
                     <li class="form-review__grade-item radio">
-                      <input class="visually-hidden radio__input" id="dntkmow" type="radio" name="dntkmow" value="don't know">
+                      <input class="visually-hidden radio__input" id="dntkmow" type="radio" name="grade" value="don't know">
                       <label class="radio__label" for="dntkmow" >Затрудняюсь ответить</label>
                     </li>
                   </ul>
                 </fieldset>
               </div>
               <div class="form-review__wrapper">
-                <fieldset class="form__review">
+                <fieldset class="form-review__fieldset">
                   <legend class="form-review__title">Посещеные достопримечательности</legend>
                   <ul class="form-review__visit-list">
                     <li class="form-review__visit-item visit">
@@ -139,10 +139,10 @@
                 </fieldset>
               </div>
               <div class="form-review__wrapper">
-                <fieldset class="form__review">
+                <fieldset class="form-review__fieldset">
                   <legend class="form-review__title">Опишите свои эмоции:</legend>
-                    <textarea class="input-text__input input-text__input--emotion" rows="8" id="emotion"  name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
-                    <button class="input-text__input input-text__input--button" type="submit">
+                    <textarea class="form-review__textarea" rows="8" id="emotion"  name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+                    <button class="form-review__button" type="submit">
                       Отправить отзыв
                     </button>
                     <p class="form-review__required">
