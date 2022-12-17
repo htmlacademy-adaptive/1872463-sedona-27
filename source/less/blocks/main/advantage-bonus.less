@@ -77,3 +77,56 @@
   color: #333333;
   margin: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .advantage-bonus-wrapper {
+    padding: 0;
+    padding-top: 158px;
+  }
+
+  .advantage-bonus-list {
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantage-bonus-item {
+    padding-right: 33px;
+    padding-bottom: 64px;
+    padding-left: 33px;
+    text-align: center;
+    /*height: 256px;*/
+  }
+
+  .advantage-bonus-item__title {
+    text-align: center;
+  }
+
+  .advantage-bonus-item__title--house::before {
+    top: -100px;
+    left: 90px;
+    width: 77px;
+    height: 72px;
+    background-image: url("../img/icon-house-tablet.svg");
+  }
+
+  .advantage-bonus-item__title--food::before {
+    top: -100px;
+    left: 90px;
+    width: 80px;
+    height: 68px;
+    background-image: url("../img/icon-burger-tablet.svg");
+  }
+
+  .advantage-bonus-item__title--gift::before {
+    top: -105px;
+    left: 84px;
+    width: 67px;
+    height: 75px;
+    background-image: url("../img/icon-gift-tablet.svg");
+  }
+
+  .advantage-bonus-item__tagline {
+    font-size: 18px;
+  }
+}

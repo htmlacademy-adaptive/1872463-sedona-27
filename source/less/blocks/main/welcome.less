@@ -7,16 +7,6 @@
   background-size: 100% 55px, cover;
 }
 
-@media (min-width: @tablet-width) {
-  .welcome {
-    padding-right: 153px;
-    padding-left: 153px;
-    padding-bottom: 91px;
-    background: url("../img/intro-triangle-tablet.svg") repeat-x 0 bottom, url("../img/back-mobile-tablet.svg") no-repeat;
-    background-size: 100% 55px, cover;
-  }
-}
-
 .welcome__img {
   display: block;
   width: 100%;
@@ -25,7 +15,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .welcome {
+    padding-right: 153px;
+    padding-left: 153px;
+    padding-bottom: 91px;
+    background: url("../img/intro-triangle-tablet.svg") repeat-x 0 bottom, url("../img/back-mobile-tablet.svg") no-repeat;
+    background-size: 100% 55px, cover;
+  }
+
   .welcome__img {
     padding-top: 77px;
+    width: 100%;
+    height: auto;
   }
 }
