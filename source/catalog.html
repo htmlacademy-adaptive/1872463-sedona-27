@@ -2,10 +2,12 @@
   <html class="page" lang="ru">
     <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Разметка страницы Каталог учебного проекта "Седона"</title>
       <link href="css/style.css" rel="stylesheet">
     </head>
     <body class="page__body">
+      <div class="container">
       <header class="main-header">
         <a class="main-header__logo-link" href="index.html">
           <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
@@ -21,22 +23,22 @@
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
+              <li class="main-nav__item main-nav__item--index">
                 <a class="main-nav__item-link" href="index.html">
                   Главная
                 </a>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">
+              <li class="main-nav__item main-nav__item--catalog">
+                <a class="main-nav__item-link main-nav__item-link--active" href="#">
                   Фото и видео
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--form">
                 <a class="main-nav__item-link" href="form.html">
                   Форма отзыва
                 </a>
               </li>
-              <li class="main-nav__item main-nav__item--htmlacademi">
+              <li class="main-nav__item main-nav__item--htmlacademy">
                 <a class="main-nav__item-link" href="#">
                   HTML ACADEMY
                 </a>
@@ -50,7 +52,7 @@
         <section class="catalog">
           <h1 class="visually-hidden">Коллекция фото и видео снятых туристами</h1>
           <div class="sedona">
-            <img  class="sedona__img" src="img/sedona.png" alt="Седона." width="229" height="39">
+            <img  class="sedona__img" src="img/sedona.svg" alt="Седона." width="229" height="39">
           </div>
           <div class="catalog-intro">
             <h2 class="catalog-intro__title">
@@ -178,5 +180,6 @@
           </div>
         </div>
       </footer>
+      </div>
     </body>
   </html>

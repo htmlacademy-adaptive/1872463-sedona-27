@@ -6,7 +6,7 @@
   padding-left: 20px;
 }
 
-.form__review {
+.form-review__fieldset {
   display: block;
   border: none;
   margin: 0;
@@ -66,8 +66,7 @@
   }
 }
 
-.input-text__input--contact,
-.input-text__input--emotion {
+.input-text__input--contact {
   &::placeholder {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
@@ -162,7 +161,7 @@
     display: block;
     left: 15px;
     top: 15px;
-    background-image: url(../img/tick.svg);
+    background-image: url("../img/tick.svg");
     background-repeat: no-repeat;
     display: none;
   }
@@ -172,26 +171,51 @@
   display: block;
 }
 
-.input-text__input--emotion {
-  margin-bottom: 53px;
+.form-review__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  margin: 0;
+  margin-bottom: 56px;
+  padding: 16px;
+  border: none;
+  background-color: #e5e5e5;
+
+  &::placeholder {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
-.input-text__input--button {
+.form-review__button {
+  width: 100%;
+  box-sizing: border-box;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0 0 3px 0;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border: none;
   background-color: #81b3d2;
   cursor: pointer;
 }
 
 .form-review__required {
-  margin: 0;
   font-size: 12px;
   line-height: 21px;
   font-weight: 400;
   text-align: right;
+  margin: 0;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.3);
 }
