@@ -73,7 +73,7 @@
                   — №1 —
                 </p>
                 <p class="advantage-item__tagline advantage-item__tagline--primary">
-                  Седона не аттракцион для туристов, там течёт своя жизнь
+                  Седона не аттракцион для туристов, там течет своя жизнь
                 </p>
               </div>
               <div class="advantage-item__photo-wrapper advantage-item__photo--primary">
@@ -82,15 +82,15 @@
               <!-- Дополнительные Преимущества Begin -->
               <div class="advantage-bonus-wrapper">
                 <ul class="advantage-bonus-list">
-                  <li class="advantage-bonus-item">
+                  <li class="advantage-bonus-item advantage-bonus-item--house">
                     <h4 class="advantage-bonus-item__title advantage-bonus-item__title--house">Жилье</h4>
                     <p class="advantage-bonus-item__tagline">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </li>
-                  <li class="advantage-bonus-item">
+                  <li class="advantage-bonus-item advantage-bonus-item--food">
                     <h4 class="advantage-bonus-item__title advantage-bonus-item__title--food">Еда</h4>
                     <p class="advantage-bonus-item__tagline">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                   </li>
-                  <li class="advantage-bonus-item">
+                  <li class="advantage-bonus-item advantage-bonus-item--gift">
                     <h4 class="advantage-bonus-item__title advantage-bonus-item__title--gift">Сувениры</h4>
                     <p class="advantage-bonus-item__tagline">Не только китайского, но и местного производства!</p>
                   </li>
@@ -116,7 +116,7 @@
             </li>
             <li class="advantage-item advantage-item--tertiary">
               <div class="advantage-wrapper advantage-wrapper--tertiary">
-                <h3 class="advantage-item__title advantage-item__title--tertiary">
+                <h3 class="advantage-item__title advantage-item__title--tertiary advantage-item__title--tertiary-area">
                   Небольшая площадь
                 </h3>
                 <p class="advantage-item__order advantage-item__order--tertiary">
@@ -129,20 +129,20 @@
             </li>
             <li class="advantage-item advantage-item--tertiary">
               <div class="advantage-wrapper advantage-wrapper--tertiary">
-                <h3 class="advantage-item__title  advantage-item__title--tertiary">
+                <h3 class="advantage-item__title  advantage-item__title--tertiary advantage-item__title--tertiary-road">
                   Красивая дорога
                 </h3>
-                <p class="advantage-item__order advantage-item__order--tertiary">
+                <p class="advantage-item__order advantage-item__order--tertiary advantage-item__order--tertiary-road">
                   — №4 —
                 </p>
-                <p class="advantage-item__tagline advantage-item__tagline--tertiary">
-                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                <p class="advantage-item__tagline advantage-item__tagline--tertiary advantage-item__tagline--tertiary-road">
+                  Ехать в Седону из Лас-Вегаса совсем не&nbsp;скучно!
                 </p>
               </div>
             </li>
             <li class="advantage-item advantage-item--tertiary">
               <div class="advantage-wrapper advantage-wrapper--tertiary">
-                <h3 class="advantage-item__title  advantage-item__title--tertiary">
+                <h3 class="advantage-item__title  advantage-item__title--tertiary advantage-title--tertiary-tourist">
                   Мало туристов
                 </h3>
                 <p class="advantage-item__order advantage-item__order--tertiary">
@@ -162,9 +162,11 @@
           <a class="search-hotel__button" href="#">Найти гостиницу</a>
         </section>
         <section class="map">
-          <h2 class="visually-hidden">Картa Аризоны</h2>
-          <img class="map__sedona" src="img/map-mobile.jpg" alt="Карта Аризоны." width="320" height="350">
-        </section>
+          <h2 class="visually-hidden">Картa города Седона</h2>
+          <div class="map__wrapper">
+            <iframe class="map__sedona" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774668!2d-111.83015785855821!3d34.85444381527645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1671565009206!5m2!1sru!2sru" width="320" height="350" style="border:0;" title="Карта окрестностей города Седона." allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          </section>
         <!-- Преимущества End -->
       </main>
       <footer class="main-footer">
@@ -196,6 +198,34 @@
               <img class="copyright__img" src="img/copyright.svg" width="129" height="36" alt="Разработано HTML Academy.">
             </a>
           </div>
+          <div class="main-footer__tag">
+            #visitSedona
+          </div>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                  <img  class="social__link-img" src="img/social-vk.svg" alt="Мы в Контакте." width="24" height="24">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                  <img  class="social__link-img" src="img/social-telegram.svg" alt="Мы в Телеграме." width="24" height="24">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <img  class="social__link-img" src="img/social-youtube.svg" alt="Мы в Ютубе." width="24" height="24">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__img" src="img/copyright.svg" width="129" height="36" alt="Разработано HTML Academy.">
+            </a>
+          </div>
+
         </div>
       </footer>
       </div>

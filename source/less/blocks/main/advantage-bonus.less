@@ -81,52 +81,78 @@
 @media (min-width: @tablet-width) {
   .advantage-bonus-wrapper {
     padding: 0;
-    padding-top: 158px;
+    padding-top: 154px;
   }
 
   .advantage-bonus-list {
     display: flex;
-    //flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .advantage-bonus-item {
-    padding-right: 33px;
-    padding-bottom: 64px;
-    padding-left: 33px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
     text-align: center;
-    /*height: 256px;*/
+  }
+
+  .advantage-bonus-item--house {
+    padding-top: 5px;
+    padding-right: 33px;
+    padding-left: 33px;
+    width: 190px;
+  }
+
+  .advantage-bonus-item--food {
+    padding-top: 3px;
+    padding-right: 42px;
+    padding-left: 39px;
+    width: 151px;
+  }
+
+  .advantage-bonus-item--gift {
+    padding-top: 0;
+    padding-right: 38px;
+    padding-left: 33px;
+    width: 183px;
   }
 
   .advantage-bonus-item__title {
+    font-size: 21px;
     text-align: center;
+    padding-bottom: 24px;
   }
 
   .advantage-bonus-item__title--house::before {
-    top: -100px;
-    left: 90px;
+    top: -99px;
+    left: 55px;
     width: 77px;
     height: 72px;
     background-image: url("../img/icon-house-tablet.svg");
   }
 
+  .advantage-bonus-item__title--food {
+    padding-bottom: 23px;
+  }
+
   .advantage-bonus-item__title--food::before {
-    top: -100px;
-    left: 90px;
+    top: -95px;
+    left: 34px;
     width: 80px;
     height: 68px;
     background-image: url("../img/icon-burger-tablet.svg");
   }
 
   .advantage-bonus-item__title--gift::before {
-    top: -105px;
-    left: 84px;
+    top: -90px;
+    left: 62px;
     width: 67px;
     height: 75px;
     background-image: url("../img/icon-gift-tablet.svg");
   }
 
   .advantage-bonus-item__tagline {
-    font-size: 18px;
+    font-size: 14px;
+    text-align: center;
   }
 }

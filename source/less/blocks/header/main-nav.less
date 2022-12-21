@@ -71,8 +71,7 @@
 
   .main-nav__item {
     background: #ffffff;
-    padding-top: 18px;
-    padding-bottom: 17px;
+    padding: 0;
   }
 
   .main-nav__item:nth-child(4n+3) {
@@ -91,12 +90,18 @@
     border: none;
   }
 
-  .main-nav__item-link {
-    color: #000000;
-  }
-
   .main-nav__item-link--active {
     color: #766357;
+  }
+
+  .main-nav__item-link {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 19px;
+    padding-bottom: 16px;
+    padding-left: 4px;
+    color: #000000;
   }
 
   .main-nav__item:last-child::before {
