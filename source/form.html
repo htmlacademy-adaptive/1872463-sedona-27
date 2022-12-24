@@ -64,41 +64,43 @@
           </div>
           <!--<div class="review__form-container"> -->
             <form class="form-review" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="form-review__wrapper">
-                <fieldset class="form-review__fieldset">
-                  <legend class="form-review__title">Представьтесь:</legend>
-                  <ul class="form-review__name-list">
-                    <li class="form-review__name-item input-text">
-                      <label class="input-text__label" for="name">Имя*:</label>
-                      <input class="input-text__input" type="text" id="name" name="name" placeholder="Пётр" required>
-                    </li>
-                    <li class="form-review__name-item input-text">
-                      <label class="input-text__label" for="surname">Фамилия*:</label>
-                      <input class="input-text__input" type="text" id="surname" name="surname" placeholder="Пустота" required>
-                    </li>
-                    <li class="form-review__name-item input-text">
-                      <label class="input-text__label" for="middle-name">Отчество:</label>
-                      <input class="input-text__input" type="text" id="middle-name" name="middle-name" placeholder="Викторович">
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div class="form-review__wrapper">
-                <fieldset class="form-review__fieldset">
-                  <legend class="form-review__title">Контактная информация:</legend>
-                  <ul class="form-review__сontact-list">
-                    <li class="form-review__сontact-item input-text input-text--with-icon-phone">
-                      <label class="input-text__label" for="phone">Контактный телефон*:</label>
-                      <input  class="input-text__input input-text__input--contact" type="tel" id="phone"  name="phone" placeholder="Введите телефон" required>
-                    </li>
-                    <li class="form-review__сontact-item input-text input-text--with-icon-e-mail">
-                      <label  class="input-text__label" for="e-mail">Электронная почта*:</label>
-                      <input  class="input-text__input input-text__input--contact"type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
-              <div class="form-review__wrapper">
+              <div class="form-review__container">
+                <div class="form-review__wrapper form-review__wrapper--name">
+                  <fieldset class="form-review__fieldset">
+                    <legend class="form-review__title form-review__title--name">Представьтесь:</legend>
+                    <ul class="form-review__name-list">
+                      <li class="form-review__name-item input-text">
+                        <label class="input-text__label input-text__label--name" for="name">Имя*:</label>
+                        <input class="input-text__input" type="text" id="name" name="name" placeholder="Пётр" required>
+                      </li>
+                      <li class="form-review__name-item input-text">
+                        <label class="input-text__label input-text__label--name" for="surname">Фамилия*:</label>
+                        <input class="input-text__input" type="text" id="surname" name="surname" placeholder="Пустота" required>
+                      </li>
+                      <li class="form-review__name-item input-text">
+                        <label class="input-text__label input-text__label--name" for="middle-name">Отчество:</label>
+                        <input class="input-text__input" type="text" id="middle-name" name="middle-name" placeholder="Викторович">
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+                <div class="form-review__wrapper ">
+                  <fieldset class="form-review__fieldset">
+                    <legend class="form-review__title form-review__title--contact">Контактная информация:</legend>
+                    <ul class="form-review__сontact-list">
+                      <li class="form-review__сontact-item input-text input-text--with-icon-phone">
+                        <label class="input-text__label input-text__label--contact" for="phone">Контактный телефон*:</label>
+                        <input  class="input-text__input input-text__input--contact" type="tel" id="phone"  name="phone" placeholder="Введите телефон" required>
+                      </li>
+                      <li class="form-review__сontact-item input-text input-text--with-icon-e-mail">
+                        <label  class="input-text__label input-text__label--contact" for="e-mail">Электронная почта*:</label>
+                        <input  class="input-text__input input-text__input--contact"type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
+                      </li>
+                    </ul>
+                  </fieldset>
+                </div>
+                </div>
+                <div class="form-review__wrapper">
                 <fieldset class="form-review__fieldset">
                   <legend class="form-review__title">Ваше общее впечатление:</legend>
                   <ul class="form-review__grade-list">
@@ -116,7 +118,7 @@
                     </li>
                   </ul>
                 </fieldset>
-              </div>
+                </div>
               <div class="form-review__wrapper">
                 <fieldset class="form-review__fieldset">
                   <legend class="form-review__title">Посещеные достопримечательности</legend>
