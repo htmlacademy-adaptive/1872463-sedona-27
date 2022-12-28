@@ -1,20 +1,60 @@
 .main-nav {
+  position: relative;
+  min-height: 56px;
   background-color: #ffffff;
-}
-
-.main-nav__toggle {
-  display: block;
-  margin-left: auto;
-  padding: 15px 17px 15px 0;
-  background-color: #ffffff;
-  border: none;
 }
 
 .main-nav__list {
+  display: none;
   margin: 0;
-  margin-top: 40px;
   padding: 0;
   list-style-type: none;
+}
+
+.main-nav--closed .main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 5;
+  display: block;
+  width: 23px;
+  height: 22px;
+  padding: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+  background-image: url(../img/icon-menu.svg);
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__list {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 5;
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  background-color: #81b3d2;
+  cursor: pointer;
+  border: none;
+  background-image: url(../img/icon-cross.svg);
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 
 .main-nav__item {
@@ -62,6 +102,10 @@
     display: none;
   }
 
+  .main-nav--closed .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -71,8 +115,7 @@
 
   .main-nav__item {
     background: #ffffff;
-    padding-top: 18px;
-    padding-bottom: 17px;
+    padding: 0;
   }
 
   .main-nav__item:nth-child(4n+3) {
@@ -92,16 +135,24 @@
   }
 
   .main-nav__item-link {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 19px;
+    padding-bottom: 16px;
+    padding-left: 4px;
     color: #000000;
-  }
-
-  .main-nav__item-link--active {
-    color: #766357;
   }
 
   .main-nav__item:last-child::before {
     position: relative;
   }
+
+  .main-nav__item-link--active {
+    color: #766357;
+  }
 }
+
+
 
 /* ----------- Tablet End ----------- */
