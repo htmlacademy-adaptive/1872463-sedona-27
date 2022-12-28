@@ -12,14 +12,9 @@
         <a class="main-header__logo-link" href="index.html">
           <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть/Свернуть меню</span>
-            <svg class="main-nav__icon" aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.9 0H0V4H22.9V0Z" fill="#81b3d2"/>
-              <path d="M22.9 9H0V13H22.9V9Z" fill="#81b3d2"/>
-              <path d="M22.9 18H0V22H22.9V18Z" fill="#81b3d2"/>
-            </svg>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -62,7 +57,6 @@
               Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещеных вами достопримечательностях
             </p>
           </div>
-          <!--<div class="review__form-container"> -->
             <form class="form-review" action="https://echo.htmlacademy.ru/" method="post">
               <div class="form-review__container">
                 <div class="form-review__wrapper form-review__wrapper--name">
@@ -84,7 +78,7 @@
                     </ul>
                   </fieldset>
                 </div>
-                <div class="form-review__wrapper ">
+                <div class="form-review__wrapper form-review__wrapper--contact">
                   <fieldset class="form-review__fieldset">
                     <legend class="form-review__title form-review__title--contact">Контактная информация:</legend>
                     <ul class="form-review__сontact-list">
@@ -100,9 +94,9 @@
                   </fieldset>
                 </div>
                 </div>
-                <div class="form-review__wrapper">
+                <div class="form-review__wrapper form-review__wrapper--grade">
                 <fieldset class="form-review__fieldset">
-                  <legend class="form-review__title">Ваше общее впечатление:</legend>
+                  <legend class="form-review__title form-review__title--grade">Ваше общее впечатление:</legend>
                   <ul class="form-review__grade-list">
                     <li class="form-review__grade-item radio">
                       <input class="visually-hidden radio__input" id="good" name="grade" value="good" type="radio" checked>
@@ -119,9 +113,9 @@
                   </ul>
                 </fieldset>
                 </div>
-              <div class="form-review__wrapper">
+              <div class="form-review__wrapper form-review__wrapper--visit">
                 <fieldset class="form-review__fieldset">
-                  <legend class="form-review__title">Посещеные достопримечательности</legend>
+                  <legend class="form-review__title form-review__title--visit">Посещенные достопримечательности:</legend>
                   <ul class="form-review__visit-list">
                     <li class="form-review__visit-item visit">
                       <input class="visually-hidden visit__input" id="bridge" name="bridge" value="bridge" type="checkbox"  checked>
@@ -133,7 +127,7 @@
                     </li>
                     <li class="form-review__visit-item visit">
                       <input class="visually-hidden visit__input" id="park" name="park" value="park" type="checkbox" checked>
-                      <label class="visit__label" for="park">Слайд-Парк</label>
+                      <label class="visit__label" for="park">Слайд-парк</label>
                     </li>
                     <li class="form-review__visit-item visit">
                       <input class="visually-hidden visit__input" id="rock" name="rock" value="rock" type="checkbox">
@@ -142,16 +136,14 @@
                   </ul>
                 </fieldset>
               </div>
-              <div class="form-review__wrapper">
+              <div class="form-review__wrapper form-review__wrapper--emotion">
                 <fieldset class="form-review__fieldset">
-                  <legend class="form-review__title">Опишите свои эмоции:</legend>
-                    <textarea class="form-review__textarea" rows="8" id="emotion"  name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
-                    <button class="form-review__button" type="submit">
-                      Отправить отзыв
-                    </button>
-                    <p class="form-review__required">
-                      * - Обязательные поля
-                    </p>
+                  <legend class="form-review__title form-review__title--emotion">Опишите свои эмоции:</legend>
+                  <textarea class="form-review__textarea" rows="8" id="emotion"  name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+                  <div class="form-review__button-container">
+                  <button class="form-review__button" type="submit">Отправить отзыв</button>
+                  <p class="form-review__required">* — Обязательные поля</p>
+                  </div>
                 </fieldset>
               </div>
             </form>
@@ -190,5 +182,6 @@
         </div>
       </footer>
       </div>
+      <script src="script.js"></script>
     </body>
   </html>

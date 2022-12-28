@@ -1,9 +1,30 @@
 .form-review__wrapper {
   border-top: 1px solid #e5e5e5;
   padding-top: 24px;
-  padding-bottom: 23px;
+  //padding-bottom: 25px;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.form-review__wrapper--name {
+  padding-bottom: 24px;
+}
+
+.form-review__wrapper--contact {
+  padding-bottom: 21px;
+}
+
+.form-review__wrapper--grade {
+  padding-bottom: 7px;
+}
+
+.form-review__wrapper--visit {
+  padding-top: 25px;
+  padding-bottom: 7px;
+}
+
+.form-review__wrapper--emotion {
+  padding-bottom: 26px;
 }
 
 .form-review__fieldset {
@@ -20,6 +41,19 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 18px;
+}
+
+.form-review__title--grade {
+  padding-bottom: 20px;
+}
+
+.form-review__title--visit {
+  padding-right: 7px;
+  padding-bottom: 20px;
+}
+
+.form-review__title--emotion {
   padding-bottom: 20px;
 }
 
@@ -45,16 +79,45 @@
   padding-left: 16px;
 }
 
+.input-text__label--contact {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    display: block;
+    left: 222px;
+    top: 20px;
+    background-color: #e6e6e6;
+    right: 10px;
+    bottom: 10px
+  }
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    display: block;
+    left: 242px;
+    top: 42px;
+    background-image: url(../img/phone.svg);
+    z-index: 3;
+  }
+}
+
 .input-text__input {
   width: 100%;
   margin: 0;
   box-sizing: border-box;
-  padding-top: 16px;
+  padding-top: 24px;
   padding-right: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   padding-left: 16px;
   border: none;
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
 
   &::placeholder {
     font-style: normal;
@@ -79,7 +142,7 @@
 
 /*Радио кнопки Begin*/
 .form-review__grade-item {
-  margin-bottom: 30px;
+  padding-bottom: 13px;
 }
 
 .radio__label {
@@ -126,7 +189,7 @@
 /*Радио кнопки END*/
 /*Чекбоксы Begin*/
 .form-review__visit-item {
-  margin-bottom: 30px;
+  padding-bottom: 13px;
 }
 
 .visit__label {
@@ -135,7 +198,7 @@
   line-height: 26px;
   font-weight: 700;
   display: inline-block;
-  padding-left: 61px;
+  padding-left: 62px;
   padding-top: 9px;
   min-height: 40px;
   color: #000000;
@@ -159,8 +222,8 @@
     height: 16px;
     position: absolute;
     display: block;
-    left: 15px;
-    top: 15px;
+    left: 11px;
+    top: 14px;
     background-image: url("../img/tick.svg");
     background-repeat: no-repeat;
     display: none;
@@ -176,9 +239,9 @@
   box-sizing: border-box;
   display: block;
   height: auto;
+  padding: 18px  16px 11px 16px;
   margin: 0;
-  margin-bottom: 56px;
-  padding: 16px;
+  margin-bottom: 57px;
   border: none;
   background-color: #e5e5e5;
 
@@ -195,15 +258,16 @@
 .form-review__button {
   width: 100%;
   box-sizing: border-box;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 0 0 3px 0;
-  padding-top: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  margin: 0 0 2px 0;
+  padding-top: 17px;
+  padding-right: 15px;
+  padding-bottom: 15px;
   padding-left: 16px;
   border: none;
   background-color: #81b3d2;
@@ -224,24 +288,97 @@
   .form-review {
     padding-right: 60px;
     padding-left: 60px;
+    padding-top: 1px;
   }
 
   .form-review__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
+    padding-top: 23px;
+    padding-bottom: 49px;
   }
 
   .form-review__wrapper {
     border-top: none;
-    padding-top: 21px;
+    padding-top: 0;
     padding-right: 0;
-    padding-bottom: 22px;
+    padding-bottom: 0;
     padding-left: 0;
   }
 
   .form-review__wrapper--name {
     padding-right: 45px;
+  }
+
+  .form-review__wrapper--contact {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      background-color: #dbdbdb;
+    }
+  }
+
+  .form-review__wrapper--grade {
+    padding-top: 0;
+    padding-bottom: 34px;
+  }
+
+  .form-review__title--grade {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      display: block;
+      left: -186px;
+      top: 11px;
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      display: block;
+      right: -186px;
+      top: 11px;
+      background-color: #dbdbdb;
+    }
+  }
+
+  .form-review__wrapper--visit {
+    padding-bottom: 25px;
+  }
+
+  .form-review__grade-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+  }
+
+  .form-review__name-list {
+    padding-right: 0px;
+  }
+
+  .form-review__сontact-list {
+    padding-left: 44px;
+  }
+
+  .form-review__visit-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
   }
 
   .form-review__title {
@@ -259,15 +396,132 @@
     text-align: left;
   }
 
+  .form-review__title--visit {
+    padding-right: 132px;
+    padding-left: 131px;
+    padding-bottom: 27px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      display: block;
+      left: 0;
+      top: 25px;
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      display: block;
+      right: 0;
+      top: 25px;
+      background-color: #dbdbdb;
+    }
+  }
+
   .input-text__label {
     padding-left: 56px;
   }
 
   .input-text__label--contact {
-    padding-left: 40px;
+    padding-left: 16px;
   }
 
   .input-text__label--name {
     padding-left: 16px;
+  }
+
+  .radio__label {
+
+    &::before {
+      left: -1px;
+      top: -2px;
+    }
+
+    &::after {
+      left: 14px;
+      top: 13px;
+    }
+  }
+
+  .radio {
+    &:nth-child(odd) {
+      padding-left: 37px;
+      padding-top: 3px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 10px;
+      padding-top: 3px;
+    }
+  }
+
+  .visit {
+    &:nth-child(odd) {
+      padding-left: 85px;
+      padding-top: 2px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 16px;
+      padding-top: 2px;
+    }
+  }
+
+  .form-review__grade-item {
+    padding-bottom: 10px;
+  }
+
+  .form-review__wrapper--emotion {
+    padding-bottom: 62px;
+  }
+
+  .form-review__title--emotion {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      display: block;
+      left: -196px;
+      top: 11px;
+      background-color: #dbdbdb;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      display: block;
+      right: -197px;
+      top: 11px;
+      background-color: #dbdbdb;
+    }
+  }
+
+  .form-review__textarea {
+    padding: 18px 16px 22px 16px;
+    margin-bottom: 48px;
+  }
+
+  .form-review__button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+  }
+
+  .form-review__required {
+    font-size: 14px;
+    padding-left: 164px;
+    padding-top: 23px;
   }
 }
