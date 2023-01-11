@@ -13,7 +13,7 @@
         <a class="main-header__logo-link" href="index.html">
           <img class="main-header__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть/Свернуть меню</span>
           </button>
@@ -47,7 +47,11 @@
       <main class="main-container">
         <section class="welcome">
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-          <img  class="welcome__img" src="img/welcome.svg" alt="Welcome to the gorgeous Sedona." width="282" height="214">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/welcome-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/welcome-tablet.svg">
+            <img  class="welcome__img" src="img/welcome-mobile.svg" alt="Welcome to the gorgeous Sedona." width="282" height="214">
+          </picture>
         </section>
         <section class="advantage">
           <h2 class="visually-hidden">
@@ -72,22 +76,26 @@
                 </p>
               </div>
               <div class="advantage-item__photo-wrapper advantage-item__photo--primary">
-                <img class="advantage-item__photo" src="img/photo-city.jpg" alt="Улица города Седона." width="320" height="260">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop-2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet-2x.jpg 2x">
+                  <img class="advantage-item__photo" src="img/photo-city-mobile.jpg" srcset="photo-city-mobile-2x.jpg 2x" alt="Улица города Седона." width="320" height="260">
+                </picture>
               </div>
               <!-- Дополнительные Преимущества Begin -->
               <div class="advantage-bonus-wrapper">
                 <ul class="advantage-bonus-list">
                   <li class="advantage-bonus-item advantage-bonus-item--house">
                     <h4 class="advantage-bonus-item__title advantage-bonus-item__title--house">Жилье</h4>
-                    <p class="advantage-bonus-item__tagline">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    <p class="advantage-bonus-item__tagline advantage-bonus-item__tagline--house">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </li>
                   <li class="advantage-bonus-item advantage-bonus-item--food">
                     <h4 class="advantage-bonus-item__title advantage-bonus-item__title--food">Еда</h4>
-                    <p class="advantage-bonus-item__tagline">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                    <p class="advantage-bonus-item__tagline advantage-bonus-item__tagline--food">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                   </li>
                   <li class="advantage-bonus-item advantage-bonus-item--gift">
                     <h4 class="advantage-bonus-item__title advantage-bonus-item__title--gift">Сувениры</h4>
-                    <p class="advantage-bonus-item__tagline">Не только китайского, но и местного производства!</p>
+                    <p class="advantage-bonus-item__tagline advantage-bonus-item__tagline--gift">Не только китайского, но и местного производства!</p>
                   </li>
                 </ul>
               </div>
@@ -106,7 +114,11 @@
                 </p>
               </div>
               <div class="advantage-item__photo-wrapper advantage-item__photo--secondary">
-                <img class="advantage-item__photo" src="img/photo-bridg.jpg" alt="Мост Дьявола." width="320" height="260">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridg-desktop.jpg 1x, img/photo-bridg-desktop-2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridg-tablet.jpg 1x, img/photo-bridg-tablet-2x.jpg 2x">
+                  <img class="advantage-item__photo" src="img/photo-bridg-mobile.jpg" srcset="photo-bridg-mobile-2x.jpg 2x" alt="Мост Дьявола." width="320" height="260">
+                </picture>
               </div>
             </li>
             <li class="advantage-item advantage-item--tertiary">
