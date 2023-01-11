@@ -1,7 +1,6 @@
 .form-review__wrapper {
   border-top: 1px solid #e5e5e5;
   padding-top: 24px;
-  //padding-bottom: 25px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -79,35 +78,6 @@
   padding-left: 16px;
 }
 
-.input-text__label--contact {
-  position: relative;
-
-  &::after {
-    content: "";
-    width: 57px;
-    height: 57px;
-    position: absolute;
-    display: block;
-    left: 222px;
-    top: 20px;
-    background-color: #e6e6e6;
-    right: 10px;
-    bottom: 10px
-  }
-
-  &::before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    display: block;
-    left: 242px;
-    top: 42px;
-    background-image: url(../img/phone.svg);
-    z-index: 3;
-  }
-}
-
 .input-text__input {
   width: 100%;
   margin: 0;
@@ -127,6 +97,18 @@
     font-weight: 700;
     color: #000000;
   }
+}
+
+.input-text__input--phone {
+  background-image: url("../img/phone.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+  background-position: right 20px center, right center;
+  background-repeat: no-repeat;
+}
+
+.input-text__input--email {
+  background-image: url("../img/mail.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+  background-position: right 20px center, right center;
+  background-repeat: no-repeat;
 }
 
 .input-text__input--contact {
@@ -368,7 +350,7 @@
   }
 
   .form-review__name-list {
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .form-review__сontact-list {
@@ -438,7 +420,6 @@
   }
 
   .radio__label {
-
     &::before {
       left: -1px;
       top: -2px;

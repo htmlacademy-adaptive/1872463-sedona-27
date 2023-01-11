@@ -100,6 +100,7 @@
     background-color: #d6d6d6;
     transform: translateX(-142px);
     margin-left: 50%;
+    z-index: 1;
   }
 }
 
@@ -249,6 +250,41 @@
   .advantage-item__photo {
     width: 512px;
     height: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage {
+    padding-top: 45px;
+  }
+
+  .advantage-wrapper--primary {
+    padding-top: 53px;
+    padding-right: 50px;
+    padding-left: 50px;
+    max-width: 290px;
+  }
+
+  .advantage-item__title--primary {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .advantage-item__photo {
+    width: 800px;
+    height: 256px;
+  }
+
+  .advantage-wrapper--secondary {
+    padding-right: 54px;
+    padding-left: 49px;
+    max-width: 230px;
+    padding-bottom: 36px;
+  }
+
+  .advantage-item__title--secondary {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 

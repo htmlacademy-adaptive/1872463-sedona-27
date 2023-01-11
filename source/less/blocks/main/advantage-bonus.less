@@ -157,3 +157,84 @@
     text-align: center;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .advantage-bonus-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .advantage-bonus-item--house {
+    padding-top: 15px;
+    padding-left: 74px;
+    width: 252px;
+  }
+
+  .advantage-bonus-item--food {
+    padding-top: 13px;
+    //padding-right: 144px;
+    padding-left: 58px;
+    width: 282px;
+  }
+
+  .advantage-bonus-item--gift {
+    padding-top: 17px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 400px;
+  }
+
+  .advantage-bonus-item__tagline--gift {
+    box-sizing: border-box;
+    width: 291px;
+  }
+
+  /*
+  .advantage-bonus-item--house {
+    padding-top: 15px;
+  }
+
+  .advantage-bonus-item__title--house {
+    padding-left: 133px;
+
+    &::before {
+      left: 128px;
+    }
+  }
+
+  .advantage-bonus-item__tagline--house {
+    padding-right: 0;
+    padding-left: 17px;
+    width: 300px;
+  }
+
+  .advantage-bonus-item--food {
+    padding-top: 13px;
+    padding-right: 144px;
+    padding-left: 0;
+  }
+
+  .advantage-bonus-item__title--food {
+    padding-left: 127px;
+
+    &::before {
+      left: 102px;
+    }
+  }
+
+  .advantage-bonus-item__tagline--food {
+    width: 291px;
+  }
+
+  .advantage-bonus-item--gift {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+  }
+
+  .advantage-bonus-item__tagline--gift {
+    width: 291px;
+  }
+  */
+}
