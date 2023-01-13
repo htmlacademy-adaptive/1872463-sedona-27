@@ -2,8 +2,25 @@
   padding-bottom: 11px;
 }
 
+.map__wrapper {
+  position: relative;
+}
+
+.map__marker {
+  position: absolute;
+  margin-left: 46%;
+  margin-top: 160px;
+}
+
 .map__sedona {
   display: block;
   width: 100%;
   height: 350px;
+}
+
+@media (min-width: 768px) {
+  .map__marker {
+    margin-left: 48%;
+    margin-top: 163px;
+  }
 }

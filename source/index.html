@@ -4,8 +4,8 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Разметка главной страницы учебного проекта "Седона"</title>
-      <link href="css/style.css" rel="stylesheet">
-      <link rel="icon" href="../source/favicon.ico">
+      <link href="css/style.min.css" rel="stylesheet">
+      <link rel="icon" href="favicon.ico">
     </head>
     <body class="page__body">
       <div class="container">
@@ -35,7 +35,7 @@
                 </a>
               </li>
               <li class="main-nav__item main-nav__item--htmlacademy">
-                <a class="main-nav__item-link" href="#">
+                <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">
                   HTML ACADEMY
                 </a>
                 <div class="main-nav__item-shadow"></div>
@@ -66,7 +66,7 @@
             <li class="advantage-item advantage-item--primary">
               <div class="advantage-wrapper advantage-wrapper--primary">
                 <h3 class="advantage-item__title advantage-item__title--primary">
-                  Настоящий городок
+                  Настоящий Городок
                 </h3>
                 <p class="advantage-item__order">
                   — №1 —
@@ -77,6 +77,9 @@
               </div>
               <div class="advantage-item__photo-wrapper advantage-item__photo--primary">
                 <picture>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop-2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet-2x.webp 2x">
+                  <source media="(min-width: 10px)" type="image/webp" srcset="img/photo-city-mobile.webp 1x, img/photo-city-mobile.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop-2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet-2x.jpg 2x">
                   <img class="advantage-item__photo" src="img/photo-city-mobile.jpg" srcset="photo-city-mobile-2x.jpg 2x" alt="Улица города Седона." width="320" height="260">
@@ -115,6 +118,9 @@
               </div>
               <div class="advantage-item__photo-wrapper advantage-item__photo--secondary">
                 <picture>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo-bridg-desktop.webp 1x, img/photo-bridg-desktop-2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/photo-bridg-tablet.webp 1x, img/photo-bridg-tablet-2x.webp 2x">
+                  <source media="(min-width: 10px)" type="image/webp" srcset="img/photo-bridg-mobile.webp 1x, img/photo-bridg-mobile.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-bridg-desktop.jpg 1x, img/photo-bridg-desktop-2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bridg-tablet.jpg 1x, img/photo-bridg-tablet-2x.jpg 2x">
                   <img class="advantage-item__photo" src="img/photo-bridg-mobile.jpg" srcset="photo-bridg-mobile-2x.jpg 2x" alt="Мост Дьявола." width="320" height="260">
@@ -171,10 +177,10 @@
         <section class="map">
           <h2 class="visually-hidden">Картa города Седона</h2>
           <div class="map__wrapper">
+            <img class="map__marker" src="img/map-marker.svg" width="27" height="27" alt="Маркер на карте Седоны.">
             <iframe class="map__sedona" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774668!2d-111.83015785855821!3d34.85444381527645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1671565009206!5m2!1sru!2sru" width="320" height="350" style="border:0;" title="Карта окрестностей города Седона." allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </section>
-        <!-- Преимущества End -->
       </main>
       <footer class="main-footer">
         <div class="main-footer__wrapper">
