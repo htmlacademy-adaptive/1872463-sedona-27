@@ -48,6 +48,27 @@
   padding-bottom: 16px;
   padding-left: 49px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:focus {
+    background-color: #669ec0;
+    outline: 2px solid #e5e5e5;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active .search-hotel__text {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 @media (min-width: @tablet-width) {
