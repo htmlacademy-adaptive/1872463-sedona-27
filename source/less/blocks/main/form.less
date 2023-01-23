@@ -168,6 +168,10 @@
 .radio__input:checked + .radio__label::after {
   display: block;
 }
+
+.radio__input:focus + .radio__label {
+  color: #ff0000;
+}
 /*Радио кнопки END*/
 /*Чекбоксы Begin*/
 .form-review__visit-item {
@@ -254,6 +258,27 @@
   border: none;
   background-color: #81b3d2;
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:focus {
+    background-color: #669ec0;
+    outline: 2px solid #e5e5e5;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active .search-hotel__text {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form-review__required {
