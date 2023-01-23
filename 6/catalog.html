@@ -4,8 +4,15 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Разметка страницы Каталог учебного проекта "Седона"</title>
-      <link href="css/style.css" rel="stylesheet">
-      <link rel="icon" href="../source/favicon.ico">
+      <link href="css/style.min.css" rel="stylesheet">
+      <link rel="icon" href="favicon.ico">
+      <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="images/favicons/apple.png">
+      <link rel="manifest" href="manifest.webmanifest">
+      <link rel="preload" href="fonts/ptsans.woff" as="font">
+      <link rel="preload" href="fonts/ptsans.woff2" as="font">
+      <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+      <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
       <base href="https://htmlacademy-adaptive.github.io/1872463-sedona-27/6/">
 </head>
     <body class="page__body">
@@ -36,7 +43,7 @@
                 </a>
               </li>
               <li class="main-nav__item main-nav__item--htmlacademy">
-                <a class="main-nav__item-link" href="#">
+                <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">
                   HTML ACADEMY
                 </a>
                 <div class="main-nav__item-shadow"></div>
@@ -61,14 +68,17 @@
           </div>
           <ul class="user-list">
             <li class="user-item user-item--first">
-              <div class="user-item__picture-wrapper">
+              <a class="user-item__picture-wrapper" href="#">
                 <picture>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo/photo-1-desktop.webp 1x, img/photo/photo-1-desktop-2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/photo/photo-1-tablet.webp 1x, img/photo/photo-1-tablet-2x.webp 2x">
+                  <source media="(min-width: 10px)" type="image/webp" srcset="img/photo/photo-1-mobile.webp 1x, img/photo/photo-1-mobile-2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo/photo-1-desktop.jpg 1x, img/photo/photo-1-desktop-2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo/photo-1-tablet.jpg 1x, img/photo/photo-1-tablet-2x.jpg 2x">
-                  <img class="user-item__picture user-item--first-picture" src="img/photo/photo-1-mobile.jpg" srcset="photo-1-mobile-2x.jpg 2x" alt="Неродные просторы." width="280" height="280">
+                  <img class="user-item__picture user-item-first-picture" src="img/photo/photo-1-mobile.jpg" srcset="photo-1-mobile-2x.jpg 2x" alt="Неродные просторы." width="280" height="280">
                 </picture>
-              </div>
-              <div class="user-item__text-wrapper">
+              </a>
+              <div class="user-item__text-wrapper user-label-first">
                 <div class="user-label">
                   <h3 class="user-label__title">
                     Неродные просторы
@@ -79,20 +89,24 @@
                 </div>
                 <div class="user-likes-wrapper">
                   <button class="user-likes" type="button">
-                  1350
+                    1350
+                    <span class="visually-hidden">Количество лайков</span>
                   </button>
                 </div>
               </div>
             </li>
             <li class="user-item">
-              <div class="user-item__picture-wrapper">
+              <a class="user-item__picture-wrapper" href="#">
                 <picture>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo/photo-2-desktop.webp 1x, img/photo/photo-2-desktop-2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/photo/photo-2-tablet.webp 1x, img/photo/photo-2-tablet-2x.webp 2x">
+                  <source media="(min-width: 10px)" type="image/webp" srcset="img/photo/photo-2-mobile.webp 1x, img/photo/photo-2-mobile-2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo/photo-2-desktop.jpg 1x, img/photo/photo-2-desktop-2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo/photo-2-tablet.jpg 1x, img/photo/photo-2-tablet-2x.jpg 2x">
                   <img class="user-item__picture" src="img/photo/photo-2-mobile.jpg" srcset="photo-2-mobile-2x.jpg 2x" alt="Местная растительность." width="280" height="280">
                 </picture>
-              </div>
-              <div class="user-item__text-wrapper">
+              </a>
+              <div class="user-item__text-wrapper user-label-secondary">
                 <div class="user-label">
                   <h3 class="user-label__title">
                     Местная растительность
@@ -103,20 +117,24 @@
                 </div>
                 <div class="user-likes-wrapper">
                   <button class="user-likes" type="button">
-                  143
+                    143
+                    <span class="visually-hidden">Количество лайков</span>
                   </button>
                 </div>
               </div>
             </li>
             <li class="user-item">
-              <div class="user-item__picture-wrapper">
+              <a class="user-item__picture-wrapper" href="#">
                 <picture>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo/photo-3-desktop.webp 1x, img/photo/photo-3-desktop-2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/photo/photo-3-tablet.webp 1x, img/photo/photo-3-tablet-2x.webp 2x">
+                  <source media="(min-width: 10px)" type="image/webp" srcset="img/photo/photo-3-mobile.webp 1x, img/photo/photo-3-mobile-2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo/photo-3-desktop.jpg 1x, img/photo/photo-3-desktop-2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo/photo-3-tablet.jpg 1x, img/photo/photo-3-tablet-2x.jpg 2x">
                   <img class="user-item__picture" src="img/photo/photo-3-mobile.jpg" srcset="photo-3-mobile-2x.jpg 2x" alt="Дорога на север." width="280" height="280">
                 </picture>
-              </div>
-              <div class="user-item__text-wrapper">
+              </a>
+              <div class="user-item__text-wrapper user-label-secondary">
                 <div class="user-label">
                   <h3 class="user-label__title">
                     Дорога на север
@@ -128,19 +146,23 @@
                 <div class="user-likes-wrapper">
                   <button class="user-likes" type="button">
                     96
+                    <span class="visually-hidden">Количество лайков</span>
                   </button>
                 </div>
               </div>
             </li>
             <li class="user-item">
-              <div class="user-item__picture-wrapper">
+              <a class="user-item__picture-wrapper" href="#">
                 <picture>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo/photo-4-desktop.webp 1x, img/photo/photo-4-desktop-2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/photo/photo-4-tablet.webp 1x, img/photo/photo-4-tablet-2x.webp 2x">
+                  <source media="(min-width: 10px)" type="image/webp" srcset="img/photo/photo-4-mobile.webp 1x, img/photo/photo-4-mobile-2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo/photo-4-desktop.jpg 1x, img/photo/photo-4-desktop-2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo/photo-4-tablet.jpg 1x, img/photo/photo-4-tablet-2x.jpg 2x">
                   <img class="user-item__picture" src="img/photo/photo-4-mobile.jpg" srcset="photo-4-mobile-2x.jpg 2x" alt="Мост Дьявола." width="280" height="280">
                 </picture>
-              </div>
-              <div class="user-item__text-wrapper">
+              </a>
+              <div class="user-item__text-wrapper user-label-secondary">
                 <div class="user-label">
                   <h3 class="user-label__title">
                     Мост Дьявола
@@ -152,6 +174,7 @@
                 <div class="user-likes-wrapper">
                   <button class="user-likes" type="button">
                     254
+                    <span class="visually-hidden">Количество лайков</span>
                   </button>
                 </div>
               </div>
@@ -165,10 +188,16 @@
               Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
             </p>
             <div class="catalog-video__presentation-wrapper">
+              <button class="catalog-video__button">
+                <span class="visually-hidden">Проиграть видео</span>
+              </button>
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop-2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet-2x.jpg 2x">
-                <img class="catalog-video__presentation" src="img/video-mobile.jpg" srcset="video-mobile-2x.jpg 2x" alt="Видеопрезентация." width="280" height="177">
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop-2x.webp 2x">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/video-tablet.webp 1x, img/video-tablet-2x.webp 2x">
+              <source media="(min-width: 10px)" type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile-2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop-2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet-2x.jpg 2x">
+              <img class="catalog-video__presentation" src="img/video-mobile.jpg" srcset="video-mobile-2x.jpg 2x" alt="Видеопрезентация." width="280" height="177">
               </picture>
             </div>
           </div>
@@ -200,13 +229,15 @@
           </div>
           <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__img" src="img/copyright.svg" width="129" height="36" alt="Разработано HTML Academy.">
+              <span class="copyright__text">Разработано</span>
+              <svg class="copyright__img" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-label="Ссылка на страницу HTML Academy">
+                <use xlink:href="img/sprite.svg#logo-htmlacademy"/>
+              </svg>
             </a>
           </div>
         </div>
       </footer>
       </div>
-      <script src="script.js"></script>
-    </body>
+      <script src="js/script.js"></script>
     </body>
   </html>

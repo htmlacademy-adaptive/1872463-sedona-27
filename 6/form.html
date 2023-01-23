@@ -4,7 +4,15 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Разметка страницы "Форма отзыва" учебного проекта "Седона"</title>
-      <link href="css/style.css" rel="stylesheet">
+      <link href="css/style.min.css" rel="stylesheet">
+      <link rel="icon" href="favicon.ico">
+      <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="images/favicons/apple.png">
+      <link rel="manifest" href="manifest.webmanifest">
+      <link rel="preload" href="fonts/ptsans.woff" as="font">
+      <link rel="preload" href="fonts/ptsans.woff2" as="font">
+      <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+      <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
       <base href="https://htmlacademy-adaptive.github.io/1872463-sedona-27/6/">
 </head>
     <body class="page__body">
@@ -35,7 +43,7 @@
                 </a>
               </li>
               <li class="main-nav__item main-nav__item--htmlacademy">
-                <a class="main-nav__item-link" href="#">
+                <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">
                   HTML ACADEMY
                 </a>
                 <div class="main-nav__item-shadow"></div>
@@ -89,7 +97,7 @@
                       </li>
                       <li class="form-review__сontact-item input-text input-text--with-icon-e-mail">
                         <label  class="input-text__label input-text__label--contact" for="e-mail">Электронная почта*:</label>
-                        <input  class="input-text__input input-text__input--email input-text__input--contact"type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
+                        <input  class="input-text__input input-text__input--email input-text__input--contact" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
                       </li>
                     </ul>
                   </fieldset>
@@ -148,7 +156,6 @@
                 </fieldset>
               </div>
             </form>
-          <!--</div> -->
         </section>
       </main>
       <footer class="main-footer">
@@ -177,12 +184,53 @@
           </div>
           <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img class="copyright__img" src="img/copyright.svg" width="129" height="36" alt="Разработано HTML Academy.">
+              <span class="copyright__text">Разработано</span>
+              <svg class="copyright__img" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-label="Ссылка на страницу HTML Academy">
+                <use xlink:href="img/sprite.svg#logo-htmlacademy"/>
+              </svg>
             </a>
           </div>
         </div>
       </footer>
       </div>
-      <script src="script.js"></script>
+      <div class="modal-error-container modal-error-close"><!-- modal-error-close Вкл/Выкл модальное окно -->
+        <div class="modal-error">
+          <div class="modal-error__title-wrapper">
+            <div class="modal-error__title">
+              Что-то пошло не так!
+            </div>
+          </div>
+          <div class="modal-error__text-wrapper">
+            <div class="modal-error__text">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+            </div>
+          </div>
+          <div class="modal-error__button-wrapper">
+            <button class="modal-error__button" type="submit">
+              Ок
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-send-container modal-send-close"><!-- modal-send-close Вкл/Выкл модальное окно -->
+        <div class="modal-send">
+          <div class="modal-send__title-wrapper">
+            <div class="modal-send__title">
+              Ваш отзыв отправлен!
+            </div>
+          </div>
+          <div class="modal-send__text-wrapper">
+            <div class="modal-send__text">
+              Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.
+            </div>
+          </div>
+          <div class="modal-send__button-wrapper">
+            <button class="modal-send__button" type="submit">
+              Закрыть окно
+            </button>
+          </div>
+        </div>
+      </div>
+      <script src="js/script.js"></script>
     </body>
   </html>
