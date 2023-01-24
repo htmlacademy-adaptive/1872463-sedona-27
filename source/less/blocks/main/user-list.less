@@ -1,0 +1,24 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

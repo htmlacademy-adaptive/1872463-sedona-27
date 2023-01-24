@@ -1,0 +1,62 @@
+.user-label__title {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 1px;
+}
+
+.user-label__author {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  color: #333333;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-label__title {
+    padding-bottom: 2px;
+  }
+
+  .user-label__author {
+    padding-bottom: 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-label__title {
+    color: #ffffff;
+  }
+
+  .user-label-first {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .user-label-secondary {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .user-label__author {
+    color: #ffffff;
+  }
+
+  .user-label {
+    padding-right: 10px;
+  }
+}

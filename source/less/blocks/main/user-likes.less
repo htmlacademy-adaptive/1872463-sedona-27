@@ -1,0 +1,55 @@
+.user-likes-wrapper {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.user-likes {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  padding-left: 37px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    top: -5px;
+    left: 0;
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/like-icon.svg");
+  }
+
+  &:focus {
+    color: #81b3d2;
+    outline: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-likes-wrapper {
+    padding-top: 10px;
+  }
+
+  .user-likes {
+    &::before {
+      top: 6px;
+      left: 4px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-likes {
+    color: #ffffff;
+
+    &::before {
+      background-image: url("../img/like-icon-white.svg");
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.advantage-bonus-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantage-bonus-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage-bonus-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
