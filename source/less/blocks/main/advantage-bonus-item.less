@@ -73,6 +73,10 @@
     text-align: center;
   }
 
+  .advantage-bonus-item:not(:last-child) {
+    padding-bottom: 58px;
+}
+
   .advantage-bonus-item--house {
     padding-top: 5px;
     padding-right: 33px;
@@ -159,4 +163,23 @@
     width: 243px;
     margin: 0 auto;
   }
+
+  .advantage-bonus-item__title--house::before {
+    top: -102px;
+    left: 86px;
+  }
+
+  .advantage-bonus-item__title--food::before {
+    top: -97px;
+    left: 99px;
+  }
+
+  .advantage-bonus-item__title--gift::before {
+    top: -105px;
+    left: 165px;
+  }
+
+  .advantage-bonus-item:not(:last-child) {
+    padding-bottom: 66px;
+}
 }
