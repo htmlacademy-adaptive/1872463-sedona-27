@@ -56,15 +56,45 @@
 }
 
 @media (min-width: @tablet-width) {
-  .visit {
-    &:nth-child(odd) {
-      padding-left: 85px;
-      padding-top: 2px;
-    }
+  .visit--bridge {
+    padding-left: 85px;
+    padding-top: 3px;
+  }
 
-    &:nth-child(even) {
-      padding-left: 16px;
-      padding-top: 2px;
-    }
+  .visit--bell {
+    padding-left: 16px;
+    padding-top: 3px;
+  }
+
+  .visit--park {
+    padding-left: 85px;
+    padding-top: 1px;
+  }
+
+  .visit--rock {
+    padding-left: 16px;
+    padding-top: 1px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visit--bridge {
+    padding-left: 45px;
+    padding-top: 4px;
+  }
+
+  .visit--bell {
+    padding-left: 42px;
+    padding-top: 4px;
+  }
+
+  .visit--park {
+    padding-left: 35px;
+    padding-top: 4px;
+  }
+
+  .visit--rock {
+    padding-left: 11px;
+    padding-top: 4px;
   }
 }

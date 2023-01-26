@@ -117,19 +117,19 @@
                     Ваше общее впечатление:
                   </legend>
                   <ul class="form-review__grade-list">
-                    <li class="form-review__grade-item radio">
+                    <li class="form-review__grade-item radio radio--good">
                       <input class="visually-hidden radio__input" id="good" name="grade" value="good" type="radio" checked>
                       <label class="radio__label" for="good" >
                         Скорее положительное
                       </label>
                     </li>
-                    <li class="form-review__grade-item radio">
+                    <li class="form-review__grade-item radio radio--bad">
                       <input class="visually-hidden radio__input" id="bad" type="radio" name="grade" value="bad">
                       <label class="radio__label" for="bad" >
                         Скорее отрицательное
                       </label>
                     </li>
-                    <li class="form-review__grade-item radio">
+                    <li class="form-review__grade-item radio radio--dontknow">
                       <input class="visually-hidden radio__input" id="dntkmow" type="radio" name="grade" value="don't know">
                       <label class="radio__label" for="dntkmow" >
                         Затрудняюсь ответить
@@ -144,25 +144,25 @@
                     Посещенные достопримечательности:
                   </legend>
                   <ul class="form-review__visit-list">
-                    <li class="form-review__visit-item visit">
+                    <li class="form-review__visit-item visit visit--bridge">
                       <input class="visually-hidden visit__input" id="bridge" name="bridge" value="bridge" type="checkbox" checked>
                       <label class="visit__label" for="bridge">
                         Мост Дьявола
                       </label>
                     </li>
-                    <li class="form-review__visit-item visit">
+                    <li class="form-review__visit-item visit visit--bell">
                       <input class="visually-hidden visit__input" id="bell" name="bell" value="bell" type="checkbox" checked>
                       <label class="visit__label" for="bell">
                         Гора-Колокол
                       </label>
                     </li>
-                    <li class="form-review__visit-item visit">
+                    <li class="form-review__visit-item visit visit--park">
                       <input class="visually-hidden visit__input" id="park" name="park" value="park" type="checkbox" checked>
                       <label class="visit__label" for="park">
                         Слайд-парк
                       </label>
                     </li>
-                    <li class="form-review__visit-item visit">
+                    <li class="form-review__visit-item visit visit--rock">
                       <input class="visually-hidden visit__input" id="rock" name="rock" value="rock" type="checkbox">
                       <label class="visit__label" for="rock">
                         Красные  скалы
@@ -172,7 +172,7 @@
                 </fieldset>
               </div>
               <div class="form-review__wrapper form-review__wrapper--emotion">
-                <fieldset class="form-review__fieldset">
+                <fieldset class="form-review__fieldset form-review__fieldset--textarea">
                   <legend class="form-review__title form-review__title--emotion">
                     Опишите свои эмоции:
                   </legend>
@@ -215,7 +215,7 @@
               </ul>
             </div>
             <div class="main-footer__copyright copyright">
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <a class="copyright__link copyright__link--form" href="https://htmlacademy.ru/intensive/adaptive">
                 <span class="copyright__text">Разработано</span>
                 <svg class="copyright__img" width="27" height="35" viewBox="0 0 27 35" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-label="Ссылка на страницу HTML Academy">
                   <use xlink:href="img/sprite.svg#logo-htmlacademy"/>

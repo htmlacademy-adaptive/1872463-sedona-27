@@ -26,7 +26,7 @@
     content: "";
     width: 16px;
     height: 16px;
-    position: absolute;    
+    position: absolute;
     left: 15px;
     top: 15px;
     background-color: #333333;
@@ -79,5 +79,25 @@
       padding-left: 10px;
       padding-top: 3px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .radio:nth-child(odd) {
+    padding-left: 55px;
+    padding-top: 20px;
+  }
+
+  .radio:nth-child(even) {
+    padding-left: 43px;
+    padding-top: 20px;
+  }
+
+  .radio--dontknow {
+    margin-left: -24px;
+  }
+
+  .form-review__wrapper--grade {
+    padding-bottom: 59px;
   }
 }
