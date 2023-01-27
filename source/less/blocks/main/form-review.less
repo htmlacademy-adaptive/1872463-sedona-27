@@ -65,159 +65,12 @@
   list-style-type: none;
 }
 
-.input-text {
-  padding-bottom: 16px;
-}
-
-.input-text__label {
-  font-size: 14px;
-  line-height: 21px;
-  font-style: normal;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-left: 16px;
-}
-
-.input-text__input {
-  width: 100%;
-  margin: 0;
-  box-sizing: border-box;
-  padding-top: 24px;
-  padding-right: 16px;
-  padding-bottom: 18px;
-  padding-left: 16px;
-  border: none;
-  background-color: #f2f2f2;
-
-  &::placeholder {
-    font-style: normal;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
-  }
-}
-
-.input-text__input--phone {
-  background-image: url("../img/phone.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
-  background-position: right 20px center, right center;
-  background-repeat: no-repeat;
-}
-
-.input-text__input--email {
-  background-image: url("../img/mail.svg"), linear-gradient(to left, #e6e6e6 58px, transparent 58px);
-  background-position: right 20px center, right center;
-  background-repeat: no-repeat;
-}
-
-.input-text__input--contact {
-  &::placeholder {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-    font-style: normal;
-    color: rgba(0, 0, 0, 0.3);
-  }
-}
-
-/*Радио кнопки Begin*/
 .form-review__grade-item {
   padding-bottom: 13px;
 }
 
-.radio__label {
-  position: relative;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  display: inline-block;
-  padding-left: 61px;
-  padding-top: 9px;
-  min-height: 40px;
-  color: #000000;
-  cursor: pointer;
-
-  &::before {
-    content: "";
-    width: 46px;
-    height: 46px;
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 0;
-    background-color: #f2f2f2;
-    border-radius: 50%;
-  }
-
-  &::after {
-    content: "";
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    display: block;
-    left: 15px;
-    top: 15px;
-    background-color: #333333;
-    border-radius: 50%;
-    display: none;
-  }
-}
-
-.radio__input:checked + .radio__label::after {
-  display: block;
-}
-
-.radio__input:focus + .radio__label {
-  color: #ff0000;
-}
-/*Радио кнопки END*/
-/*Чекбоксы Begin*/
 .form-review__visit-item {
   padding-bottom: 13px;
-}
-
-.visit__label {
-  position: relative;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  display: inline-block;
-  padding-left: 62px;
-  padding-top: 9px;
-  min-height: 40px;
-  color: #000000;
-  cursor: pointer;
-
-  &::before {
-    content: "";
-    width: 46px;
-    height: 46px;
-    position: absolute;
-    display: block;
-    left: 0;
-    top: 0;
-    background-color: #f2f2f2;
-    border-radius: 4%;
-  }
-
-  &::after {
-    content: "";
-    width: 22px;
-    height: 16px;
-    position: absolute;
-    display: block;
-    left: 11px;
-    top: 14px;
-    background-image: url("../img/tick.svg");
-    background-repeat: no-repeat;
-    display: none;
-  }
-}
-
-.visit__input:checked + .visit__label::after {
-  display: block;
 }
 
 .form-review__textarea {
@@ -238,6 +91,10 @@
     font-weight: 700;
     font-style: normal;
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:focus {
+    outline: 3px solid #83b3d3;
   }
 }
 
@@ -432,60 +289,12 @@
     }
   }
 
-  .input-text__label {
-    padding-left: 56px;
-  }
-
-  .input-text__label--contact {
-    padding-left: 16px;
-  }
-
-  .input-text__label--name {
-    padding-left: 16px;
-  }
-
-  .radio__label {
-    &::before {
-      left: -1px;
-      top: -2px;
-    }
-
-    &::after {
-      left: 14px;
-      top: 13px;
-    }
-  }
-
-  .radio {
-    &:nth-child(odd) {
-      padding-left: 37px;
-      padding-top: 3px;
-    }
-
-    &:nth-child(even) {
-      padding-left: 10px;
-      padding-top: 3px;
-    }
-  }
-
-  .visit {
-    &:nth-child(odd) {
-      padding-left: 85px;
-      padding-top: 2px;
-    }
-
-    &:nth-child(even) {
-      padding-left: 16px;
-      padding-top: 2px;
-    }
-  }
-
   .form-review__grade-item {
     padding-bottom: 10px;
   }
 
   .form-review__wrapper--emotion {
-    padding-bottom: 62px;
+    padding-bottom: 74px;
   }
 
   .form-review__title--emotion {
@@ -529,5 +338,104 @@
     font-size: 14px;
     padding-left: 164px;
     padding-top: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-review {
+    padding-top: 1px;
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+
+  .form-review__title--name {
+    padding-left: 168px;
+    text-align: left;
+  }
+
+  .form-review__title--contact {
+    padding-left: 109px;
+    text-align: left;
+  }
+
+  .form-review__name-item {
+    width: 430px;
+  }
+
+  .form-review__сontact-list {
+    padding-left: 78px;
+  }
+
+  .form-review__wrapper--contact::before {
+    left: 13px;
+  }
+
+  .form-review__title--grade {
+    position: relative;
+
+    &::before {
+      width: 280px;
+      left: -341px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -341px;
+    }
+  }
+
+  .form-review__container {
+    padding-bottom: 58px;
+  }
+
+  .form-review__grade-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .form-review__title--visit {
+    padding-right: 343px;
+    padding-left: 342px;
+    padding-bottom: 57px;
+
+    &::before {
+      width: 279px;
+      left: 0;
+    }
+
+    &::after {
+      width: 279px;
+      right: 0;
+    }
+  }
+
+  .form-review__wrapper--visit {
+    padding-bottom: 70px;
+  }
+
+  .form-review__visit-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .form-review__title--emotion {
+    position: relative;
+
+    &::before {
+      width: 280px;
+      left: -353px;
+    }
+
+    &::after {
+      width: 280px;
+      right: -353px;
+    }
+  }
+
+  .form-review__fieldset--textarea {
+    padding-right: 95px;
+    padding-left: 97px;
+  }
+
+  .form-review__required {
+    padding-left: 222px;
   }
 }

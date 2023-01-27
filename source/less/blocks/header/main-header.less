@@ -2,9 +2,17 @@
   background-color: #ffffff;
 }
 
+.main-header--nojs {
+  padding-top: 99px;
+}
+
 .main-header__logo-link {
-  position: relative;
+  position: absolute;
   display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-46%);
+  z-index: 1;
 
   &:focus {
     color: #83b3d3;
@@ -12,8 +20,20 @@
 }
 
 .main-header__logo-image {
-  position: absolute;
-  transform: translateX(-93px);
-  margin-left: 50%;
-  z-index: 1;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo-link {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    &:focus {
+      color: #83b3d3;
+    }
+  }
 }

@@ -22,9 +22,9 @@
   line-height: 21px;
   font-style: normal;
   font-weight: 400;
+  color: #333333;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
   margin: 0;
   padding-bottom: 38px;
   padding-right: 6px;
@@ -58,7 +58,7 @@
 @media (min-width: @tablet-width) {
   .catalog-video {
     border-top: none;
-    padding-bottom: 39px;
+    padding-bottom: 51px;
   }
 
   .catalog-video__title {
@@ -81,5 +81,21 @@
     height: 500px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-video__tagline {
+    margin: 0 auto;
+    padding-bottom: 86px;
+    width: 446px;
+  }
+
+  .catalog-video {
+    padding-bottom: 96px;
+  }
+
+  .catalog-video__presentation {
+    width: 800px;
   }
 }
