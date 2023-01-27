@@ -25,13 +25,27 @@
   }
 }
 
-.copyright__link--form {
-  position: absolute;
-  top: 6px;
-  left: 16px;
-}
-
 .copyright__img {
   vertical-align: middle;
   padding-left: 8px;
+}
+
+.copyright__link--form-mob {
+  position: absolute;
+  top: 0;
+  left: 97px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link--catalog-tablet {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+
+  .copyright__link--form-mob {
+    position: absolute;
+    top: 7px;
+    left: 16px;
+  }
 }
